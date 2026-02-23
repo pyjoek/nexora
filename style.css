@@ -574,3 +574,63 @@
     .modules-grid { grid-template-columns: 1fr; }
     footer { flex-direction: column; align-items: flex-start; padding: 2rem 1.5rem; }
   }
+
+   footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.5);
+      padding: 4rem 4rem 2rem;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 3rem;
+    }
+    .footer-brand .logo { display: block; margin-bottom: 0.9rem; }
+    .footer-brand p {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.38);
+      line-height: 1.7;
+      font-weight: 300;
+      max-width: 220px;
+    }
+    .footer-col h5 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 1.2rem;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .footer-col ul a {
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s;
+      display: flex; align-items: center; gap: 0.6rem;
+    }
+    .footer-col ul a:hover { color: #fff; }
+    .footer-col ul a svg { flex-shrink: 0; }
+    .footer-bottom {
+      grid-column: 1 / -1;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-bottom .copy { font-size: 0.78rem; color: rgba(255,255,255,0.25); }
+    .social-icons { display: flex; gap: 0.8rem; }
+    .social-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.1);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .social-icon:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.2); }
+    @media (max-width: 900px) {
+      footer { grid-template-columns: 1fr 1fr; padding: 3rem 1.5rem 1.5rem; gap: 2rem; }
+      .footer-brand { grid-column: 1 / -1; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
