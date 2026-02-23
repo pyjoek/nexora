@@ -60,6 +60,14 @@
   }
   .nav-cta:hover { background: var(--accent) !important; color: #fff !important; }
 
+.dashboard-shot img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 30px 80px rgba(10,14,26,0.12), 0 0 0 1px rgba(10,14,26,0.04);
+}
+
   /* ─── HERO ─── */
   .hero {
     min-height: 100vh;
